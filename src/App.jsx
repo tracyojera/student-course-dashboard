@@ -49,6 +49,13 @@ function CourseCard({ course }) {
       <p className={course.completed ? "completed" : "ongoing"}>
         {course.completed ? "Completed" : "In progress"}
       </p>
+      <p>
+  {course.progress === 100
+    ? "Excellent work! You finished this course."
+    : course.progress >= 50
+    ? "Good progress! Keep going."
+    : "Keep learning. Every step counts!"}
+</p>
     </article>
   );
 }
