@@ -90,6 +90,7 @@ export default function App() {
         <p>
           Track your courses and monitor your learning progress.
         </p>
+        <p>Total courses: {courses.length}</p>
       </header>
 
       <DashboardSection
